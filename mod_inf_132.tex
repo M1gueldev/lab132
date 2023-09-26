@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, english]{babel}
+\usepackage{amssymb, amsmath, amsbsy, amsfonts}
+\usepackage{upgreek}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{caption}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Tab.}
+\setlength{\columnsep}{5mm} 
+\title{\textbf{Acá va el título del experimento}\\{\textcolor{red}{Acá va el apellido paterno, apellido materno y nombres\\Acá va el apellido paterno, apellido materno y nombres}}}
+\author{FIS 132H-XX-YY o F-XX-YY, Laboratorio de Física II, INF-FCPN-UMSA}
+\date{10/03/2021}
+\begin{document}
+\maketitle
+\selectlanguage{spanish}
+\begin{abstract}
+\noindent Es uno de los aspectos más importantes del informe. Describe de una forma tal que un lector reconoce los conceptos más sobre salientes del informe. El resumen no deben contener el o los objetivos del informe -error con él que se suele incurrir normalmente-, más bien, debe incluir los resultados con sus respectivas incertidumbres y los medios por los cuales fueron obtenidos y resumir las conclusiones. Los datos experimentales y los cálculos realizados para obtener los resultados no deben ser incluidos en el resumen. Tampoco se debe incluir tablas, figuras o partes de un texto, parte del informe o referencia bibliográfica utilizada.\\
+Palabras clave: Acá viene los descriptores experimentales
+ \end{abstract}
+ \selectlanguage{english}
+\begin{abstract}
+\noindent Acá viene el resumen en inglés.\\
+Keywords: Acá se pone los descriptores experimentales en inglés.
+\end{abstract}
+%%%%%%
+\begin{multicols}{2}
+\section{\textbf{\textcolor{red}{Introdución}}}
+\noindent La introducción corresponde al entorno donde se desarrolla el experimento, que puede ser el área general de aplicación, un dominio de problemas, etc. El problema concreto se sintetiza usualmente en una frase o pregunta a la que lleva un buen desarrollo del contexto.
+\section{\textbf{\textcolor{blue}{Objetivos}}}
+\subsection{\textcolor{magenta}{Objetivo general}}
+\noindent Es un enunciado que resume la idea central y finalidad del experimento, generalmente responde al ¿para qué?.
+\subsection{\textbf{\textcolor{black}{Objetivo específico}}}
+\noindent Es importante presentar claramente los objetivos ya que como parte de la conclusión se debe discutir si éstos se alcanzaron, normalmente responden a la pregunta ¿el cómo?.
+\section{\textbf{\textcolor{blue}{Marco teórico}}}
+\noindent En esta sección se presenta de manera ordenada y coherente aquellos conceptos fundamentales necesarios para entender los fundamentos del experimento realizado. Esta sección debe incluir las ecuaciones que se van a utilizar y una explicación de cómo se utiliza la data colectada en el experimento para hacer los cálculos de las propiedades que se van a determinar. Describe detalladamente los conceptos, definiciones y proposiciones que serán usadas directamente en los resultados y análisis. La teoría guarda relación con la temática del experimento.\\
+Los comandos LateX permiten obtener una fórmula de la forma: 
+\begin{equation}
+\textup{\LARGE $\sigma$}_{\hspace{-0.1cm}N-1} \cdot \frac{\partial x}{\partial t} = \sum_{j=1}^{n}z_{j}
+\end{equation}
+\begin{equation}
+\textup{\LARGE $\sigma$}_{\hspace{-0.1cm}N-1}
+\end{equation}
+\begin{equation}
+\textup{\large $\Omega$}_{\hspace{-0.03cm}N-1}=1
+\end{equation}
+
+\section{\textbf{\textcolor{blue}{Marco experimental}}}
+\subsection{\textbf{\textcolor{magenta}{Introducción}}}
+\noindent Acá viene una breve descripción experimental con los instrumentos a ser utilizados en la experiencia con la imagen que acompaña, si es el caso. El procedimiento debe ser lo suficientemente claro como para que otro estudiante pueda usarlo de guía para realizar el experimento.
+\begin{center}
+\includegraphics[scale=0.8]{cod_col.jpeg}
+\captionof{figure}{Se observa el código de colores para una resistencia eléctrica de 4 bandas.\label{fig01}}
+\end{center}
+\noindent La figura 1 muestra un esquema para la lectura correcta en el nonius del Calibrador vernier.
+\subsection{\textbf{\textcolor{magenta}{Datos Experimentales}}}
+\noindent En esta sección va la Tabla de valores medidos u obtenidos mediante un instrumento de medición. En esta sección se presentan de forma organizada los datos obtenidos en el laboratorio, es importante utilizar el número correcto de cifras significativas, el número de cifras significativas dependerá de la precisión del instrumento utilizado para hacer las medidas por ejemplo:
+
+\begin{center}
+  \begin{tabular}{|c||c|c|}   \hline
+ N&V[v] & I[mA] \\[0,1cm] 
+            \hline \hline
+            1 & & \\ \hline
+            2 & &  \\ \hline
+            3 & &  \\ \hline
+            4 & &  \\ \hline
+            5 & &  \\ \hline
+            6 & &  \\ \hline
+            7 & &  \\ \hline
+            8 & &  \\ \hline
+            9 & &  \\ \hline
+            10& &  \\ \hline
+\end{tabular}
+ \end{center}
+Tabla 1. Se muestra en la tabla los valores experimentales medidos a partir de un multímetro digital y un miliamperímetro analogico.
+\section{\textbf{\textcolor{red}{Resultados y análisis}}}
+\noindent Presente los resultados en el orden en que fueron calculados y obtenidos, de manera organizada. Por lo general se utilizan tablas cuando los cálculos son repetitivos para una o más variables independientes. Todas las tablas y figuras deben tener un número de referencia. La discusión es la parte más importante del Informe de Laboratorio ya que en ella el estudiante demuestra que tiene dominio del experimento realizado y de los principios en los cuales éste está basado. En la discusión no sólo se analizan los resultados sino que se discute las implicaciones de los mismos.
+\section{\textbf{\textcolor{blue}{Conclusiones}}}
+\noindent En esta sección se resumen brevemente los aspectos más importantes de los objetivos del experimento. Además se discute brevemente la importancia del experimento. Se muestra hasta que punto se ha cumplido los objetivos. Se respaldan las afirmaciones con evidencia lógica, o referencias específicas de la literatura. Se establece claramente lo que se ha logrado, junto con el error relativo porcentual asociado a los resultados. En esta sección se puede también criticar el experimento y hacer recomendaciones para mejorarlo.
+\section{\textbf{\textcolor{red}{Referencias bibliográficas}}}
+\noindent Se debe incluir en esta sección los textos, artículos de publicaciones científicas nacionales o extranjeras, paginas web u otras, utilizadas en el informe, estos deben ir numerados y en orden alfabético -debe ir primero el autor principal y luego los otros autores, año de publicación, titulo del texto (si corresponde), título del artículo, mencionar la editorial (en caso de textos), editorial donde se publicó el artículo. \\
+\begin{thebibliography}{10}
+\bibitem{1} D. C. Baird (1995). Experimentación: Una introducción a la teoría de mediciones y al diseño de experimentos (2da Ed.) Mexico: Prentice-Hall Hispanoamericana.
+\bibitem{2} Alvarez, A. C. y Huayta, E. C. (2008). Medidas y Errores (3ra Ed.) La Paz - Bolivia: Catacora.
+\end{thebibliography}
+\end{multicols}
+\end{document}
